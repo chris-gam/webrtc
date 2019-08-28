@@ -1,21 +1,26 @@
-<!DOCTYPE html> 
-<html lang = "en">
- 
-   <head> 
-      <meta charset = "utf-8" /> 
-   </head>
-	
-   <body> 
-     <div class="camera">
-    <video id="video">Video stream not available.</video>
-    <button id="startbutton">Take photo</button>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/easytimer@1.1.1/src/easytimer.min.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="copy">Send your URL to a friend to start a video call</div>
+	<div class="time-container">
+		<div class="timediv" style="letter-spacing: 5px;">h:m:s</div>
+		<div id="basicUsage">00:00:00</div>
+	</div>
+	<button id="pauseButton">Pause</button>
+	<button id="stopButton">Stop</button>
+	<button id="continueButton">Continue</button>
+  <div class="video-container">
+	<video id="localVideo" autoplay muted></video>
+ 	<video id="remoteVideo" autoplay></video>
   </div>
-	     <canvas id="canvas">
-  </canvas>
-  <div class="output">
-    <img id="photo" alt="The screen capture will appear in this box.">
-  </div>
-	   
-   </body> 
-	<script src="client.js" > </script>
+  <script src="script.js"></script>
+</body>
 </html>
