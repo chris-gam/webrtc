@@ -1,6 +1,5 @@
-
 <?php	
-
+/*
 $servername = "localhost:3600";
 $username = "gamvr_usr";
 $password = "Kaj02s#3";
